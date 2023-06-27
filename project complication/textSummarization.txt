@@ -1,0 +1,77 @@
+"""
+ABSTRACT
+In recent years, people are seeking for a solution to improve text
+summarization for Thai language. Although several solutions such
+as PageRank, Graph Rank, Latent Semantic Analysis (LSA)
+models, etc., have been proposed, research results in Thai text
+summarization were restricted due to limited corpus in Thai
+language with complex grammar. This paper applied a text
+summarization system for Thai travel news based on keyword
+scored in Thai language by extracting the most relevant sentences
+from the original document. We compared LSA and Non-negative
+Matrix Factorization (NMF) to find the algorithm that is suitable
+with Thai travel news. The suitable compression rates for Generic
+Sentence Relevance score (GRS) and K-means clustering were also
+evaluated. From these experiments, we concluded that keyword
+scored calculation by LSA with sentence selection by GRS is the
+best algorithm for summarizing Thai Travel News, compared with
+human with the best compression rate of 20%.
+CCS Concepts
+• Information systems ➝ Information retrieval ➝ Retrieval
+tasks and goals➝ Summarization
+Keywords
+Text summarization; extractive summarization; non-negative
+matrix factorization
+
+1. INTRODUCTION
+Daily newspaper has abundant of data that users do not have
+enough time for reading them. It is difficult to identify the relevant
+information to satisfy the information needed by users. Automatic
+summarization can reduce the problem of information overloading
+and it has been proposed previously in English and other languages.
+However, there were only a few research results in Thai text
+summarization due to the lack of corpus in Thai language and the
+complicated grammar.
+Text Summarization [1] is a technique for summarizing the content
+of the documents. 
+It consists of three steps: 
+1) create an intermediate representation of the input text, 
+2) calculate score for the sentences based on the concepts, and 
+3) choose important sentences to be included in the summary. Text summarization can
+be divided into 2 approaches. The first approach is the extractive
+summarization, which relies on a method for extracting words and
+searching for keywords from the original document. The second
+approach is the abstractive summarization, which analyzes words
+by linguistic principles with transcription or interpretation from the
+original document. This approach implies more effective and
+accurate summary than the extractive methods. However, with the
+lack of Thai corpus, we chose to apply an extractive summarization
+method for Thai text summarization.
+This research focused on the sentence extraction function based on
+keyword score calculation then selecting important sentences based
+on the Generic Sentence Relevance score (GRS), calculated from
+Latent Semantic Analysis (LSA) and Non-negative Matrix
+Factorization (NMF). We also tried using K-means clustering for
+document summarization. In this experiment, we compared 5
+models for 5 rounds with Thai travel news using the compression
+rates of 20%, 30% and 40% and reported the rate and method that
+produced the best result from the experiment.
+2. RELATED WORKS
+In recent years, several models in Thai Text summarization have
+been introduced. Suwanno, N. et al. [2] proposed a Thai text
+summarization that extracted a paragraph from a document based
+on Thai compound nouns, term frequency method, and headline
+score for generating a summary. Chongsuntornsri, A., et al. [3]
+proposed a new approach for Text summarization in Thai based on
+content- and graph-based with the use of Topic Sensitive PageRank
+algorithm for summarizing and ranking of text segments.
+Jaruskulchai C., et al. [4] proposed a method to summarize
+documents by extracting important sentences from combining the
+specific properties (Local Property) and the overall properties
+(Global Property) of the sentences. The overall properties were
+based on the relationship between sentences in the document. From
+their experiments, the summarization of the industrial news got
+60% precision, 44% recall, and 50.9% F-measure, the general news
+got the 51.8% precision, 38.5% recall, and 43.1% F-measure while
+the fashion magazines got 53.0% precision, 33.0% recall, and
+40.4% F-measure.
