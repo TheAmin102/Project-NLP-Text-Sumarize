@@ -1,1 +1,0 @@
-Therefore, we collected 400 Thai travel news from Thairath and Manager online newspapers to be used as datasets for our experiments. From this experiment, the best model based on keyword score for Thai travel news summarization was SVD with sentence selection by Murray, G. et al.
