@@ -1,0 +1,476 @@
+S1
+
+3.6
+
+A∙B
+=
+n
+n
+||A|| ||B||
+�∑i=1
+A2i �∑i=1
+Bi2
+
+(6)
+
+Mr.Yontas
+ak
+
+1
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+Supason
+
+1
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+Tourism
+Authority
+of Thailand
+
+1
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+…
+
+…
+
+…
+
+…
+
+…
+
+…
+
+…
+
+…
+
+…
+
+…
+
+Table 3 demonstrates an example of a matrix 𝐴𝐴, constructed from
+word count by sentence of a Thai travel news. [10]
+
+0.7267
+
+0.7709
+
+0.6994
+
+0.7701
+
+Cutkum
+wordcutpy [11]
+
+0.9322
+0.6212
+
+0.9299
+0.6286
+
+0.8987
+0.6571
+
+0.7140
+0.6247
+
+cunlp [12]
+
+0.6910
+
+0.6172
+
+0.5748
+
+0.0000
+
+SWATH Example of Word by Sentence Matrix A
+S8
+
+Round 3
+
+Avg. Number
+of Sentences
+
+S7
+
+21
+16
+
+Round 1
+Round 2
+
+Min.
+Number of
+Sentences
+
+S6
+
+7
+7
+
+Max.
+ Ai Bi
+
+Similarity(A, B) = cos(θ) =
+
+(7)
+
+K-means Clustering
+
+15
+
+67
+
+7
+7
+
+13
+13
+
+55
+38
+
+Table 2 shows the overall number of sentences of news within each
+dataset. CCS Concepts
+
+• Information systems ➝ Information retrieval ➝ Retrieval
+tasks and goals➝ Summarization
+
+Keywords
+
+Text summarization; extractive summarization; non-negative
+matrix factorization
+
+1.
+
+INTRODUCTION
+
+Daily newspaper has abundant of data that users do not have
+enough time for reading them. [13]
+
+0.6347
+
+0.6858
+
+0.6200
+
+0.6867
+
+3.1
+
+Latent Semantic Analysis
+
+Latent Semantic Analysis (LSA) 𝑚𝑚
+
+𝑛𝑛
+
+𝑟𝑟
+
+𝑗𝑗=1 𝑖𝑖=1
+
+𝑙𝑙=1
+
+2
+
+𝑚𝑚𝑚𝑚𝑚𝑚 𝐹𝐹(𝑊𝑊, 𝐻𝐻) = || 𝐴𝐴 − 𝑊𝑊𝑊𝑊 ||2𝐹𝐹 Extractive Text Summarization for Thai Travel News
+Based on Keyword Scored in Thai Language
+Sarunya Nathonghor
+
+Duangdao Wichadakul
+
+Department of Computer Engineering
+Chulalongkorn University
+Bangkok, Thailand
+
+Department of Computer Engineering
+Chulalongkorn University
+Bangkok, Thailand
+
+Sarunya.N@Student.Chula.ac.th
+ABSTRACT
+
+In recent years, people are seeking for a solution to improve text
+summarization for Thai language. (5) to select a number of
+sentences based on NMF, which got the highest semantic weight
+values, where 𝐻𝐻𝑖𝑖𝑖𝑖 is the weight of the topic 𝑖𝑖 in the sentence 𝑗𝑗.
+Generic Relevance of jth sentence
+𝑟𝑟
+
+(1)
+
+= � 𝐻𝐻𝑖𝑖𝑖𝑖 𝑤𝑤𝑤𝑤𝑤𝑤𝑤𝑤ℎ𝑡𝑡(𝐻𝐻𝑖𝑖 )
+
+Document summarization using LSA
+
+Gong, Y. et al. [9]
+
+Article
+100
+0.6155
+
+Encyclopedia
+100
+0.6932
+
+News
+100
+0.5987
+
+Novel
+100
+0.6800
+
+Lexto Word
+
+S9
+
+6
+
+Round 4
+Round 5
+
+Table 3. The method of Gong, Y. et al., on
+the other hand was proposed to select only one sentence with the
+highest score from each concept so that the summary would include
+
+CONCLUSIONS
+
+In this paper, we applied several text summarization methods to
+Thai Travel News based on keyword scored in Thai language by
+extracting the most relevant sentences from the original document.
+ ACM ISBN 978-1-4503-7539-9/20/08…$15.00
+
+DOI: https://doi.org/10.1145/3417473.3417479
+
+Duangdao.W@Chula.ac.th
+
+sentences to be included in the summary. 3.3
+
+(2)
+
+A = 𝑊𝑊𝑊𝑊
+
+Factors W and H can be found by solving the optimization problem
+as follows, where𝑊𝑊𝑗𝑗𝑗𝑗 ≥ 0, 𝐻𝐻𝑖𝑖𝑖𝑖 ≥ 0.
+ Number of
+Sentences
+58
+58
+
+Dataset
+
+S5
+
+Table 2. Thai text summarization efficiency of 5 models
+Figure 2 shows the Thai text summarization efficiency of 5 models:
+(1) NMF with GRS, (2) NMF with K-means, (3) SVD with sentence
+score by Gong, Y. et al., (4) SVD with K-means, and (5) SVD with
+sentence score by Murray, G. et al. applied to 400 Thai travel news,
+divided into 5 sets of 80 news each, with the varied compression
+rates of 20%, 30% and 40%.
+ Overall Sentence Language of each Dataset
+
+S4
+
+DATA PREPARATION
+
+ 3.2
+
+A ≈ 𝑈𝑈𝑈𝑈𝑉𝑉 𝑇𝑇
+
+of the related singular value over the sum of all singular values, for
+each concept.
+
+ =
+
+∑𝑛𝑛𝑞𝑞=1 𝐻𝐻𝑖𝑖𝑖𝑖
+𝑟𝑟
+∑𝑝𝑝=1 ∑𝑛𝑛𝑞𝑞=1 𝐻𝐻𝑝𝑝𝑝𝑝
+
+(5)
+
+ Document summarization pipeline based on LSA
+and NMF
+
+S2
+
+For sentence selection by K-means clustering, we grouped similar
+sentences into the same cluster using the following steps:
+1. The value was decided by getting the percentage
+
+Non-negative Matrix Factorization
+
+Non-negative Matrix Factorization (NMF) is a method of matrix
+factorization subject to the non-negative constraint. = � � �𝐴𝐴𝑖𝑖𝑖𝑖 − � 𝑊𝑊𝑖𝑖𝑖𝑖 𝐻𝐻𝑖𝑖𝑖𝑖 �
+
+(3)
+
+NMF and LSA are both matrix factorization algorithms. 3.5
+
+Cosine Similarity
+
+Cosine similarity [18] is a widely used method to measure the
+similarity between vectors representing the documents. 3.
+
+PREPROCESSING FOR THAI TEXT
+
+The first step for working with Thai Text is word tokenization. For the Generic Sentence Relevance score, the best F1 score for the
+compression rate of 20%, 30%, and 40% was 0.86, 0.78 and 0.68
+respectively and the best F1 scores for all compression rates were
+from the approach of Murray, G. et al.
+
+Figure 2. Comparison of Thai word tokenization programs
+Tools
+
+F1 Score
+
+Validate
+PyICU In this paper, we applied LSA and NMF on the Thai Travel News
+dataset for calculating the semantic weights, which represented the
+relationship between sentences and words in order to select the
+representative sentences for summarization.
+
+ 6. EXPERIMENT AND RESULTS
+6.1 Performance Evaluations Measure
+
+7.
+
+ S3
+
+4.
+
+Figure 1. 2.
+
+RELATED WORKS
+
+ 8. ACKNOWLEDGMENTS
+
+We would like to thank the department of computer engineering,
+faculty of engineering, Chulalongkorn University for providing
+computing facilities.
+
+ (4)
+
+𝑖𝑖=1
+
+𝑤𝑤𝑤𝑤𝑤𝑤𝑤𝑤ℎ𝑡𝑡(𝐻𝐻𝑖𝑖 ) As
+multiple important sentences could be selected from a more
+important concept, Murray, G. et al. outperformed both Gong, Y. et
+al. and the GRS method.
+
+ From these experiments, we concluded that keyword
+scored calculation by LSA with sentence selection by GRS is the
+best algorithm for summarizing Thai Travel News, compared with
+human with the best compression rate of 20%.
+
+ The average numbers of sentences per news of the 5 sets
+were 21, 16, 15, 13 and 13 sentences, respectively.
+
+ In this experiment, we compared 5
+models for 5 rounds with Thai travel news using the compression
+rates of 20%, 30% and 40% and reported the rate and method that
+produced the best result from the experiment.
+
+ The precision shows the correctness of the
+extracted sentences and the recall reflects the number of good
+sentences missed by the method.
+
+ In this section, we demonstrate our pipeline (Figure 1) used for text
+summarization to generate a summary for a Thai travel news.
+
+ 5. Select a sentence with the maximum similarity score with
+the centroid of the group and add it into the summary.
+
+ The original matrix A can be separated into three
+matrices, where U is the m x r (words x extracted concept) matrix,
+V is the n x r (sentences x extracted concepts) matrix, and Σ is the
+r x r diagonal matrix, which can be reconstructed to find the original
+matrix A. The SVD can be represented in Eq. This research focused on the sentence extraction function based on
+keyword score calculation then selecting important sentences based
+on the Generic Sentence Relevance score (GRS), calculated from
+Latent Semantic Analysis (LSA) and Non-negative Matrix
+Factorization (NMF). 3.4 Generic document summarization by
+NMF
+
+Lee, J., et al. proposed Eq. In this paper, we deployed cosine similarity to measure the similarity
+of sentences in K-means clustering.
+
+ Sentences
+with the maximum score will be selected into the summary.
+
+ We concluded that keyword scored calculation by LSA
+with sentence selection by Generic Sentence Relevance score by
+Murray, G. et al. was the best algorithm while the best compression
+rate of all models was 20%, for summarizing Thai Travel News
+compared with humans.
+ For sentence selection, we used Gong, Y. et al. and
+Murray, G. et al. approaches for calculating weight of the sentence
+scores then selected sentences with the highest scores into the
+summary. Therefore, they proposed
+that NMF provided a greater possibility for extracting important
+sentences.
+
+ We then evaluated the performance of
+text summarization methods which were LSA and NMF by
+comparing their results with the summaries manually curated by
+two experts from the Faculty of Liberal Arts, Ubon Ratchathani
+University.
+
+ This meant 80%, 70% and 60% of the
+sentences will be selected into the summary.
+
+ (2) for NMF.
+
+sentences from all concepts. This model with the compression rate of 20%
+got the highest score because Murray G. et al. method determined
+the number of sentences to be extracted from each concept based on
+the importance of that concept.
